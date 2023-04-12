@@ -1,0 +1,119 @@
+.task-div {
+    margin-top: 20px;
+    width: 20%;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 20px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(149, 139, 165, 0.097);
+    border-radius: 10px;
+
+}
+
+.task-type {
+    margin-bottom: 50px;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.task-div-complete {
+    background-color: #b4b4b446;
+}
+
+.task-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 50px;
+}
+
+.checkbox-complete,
+.checkbox-delete {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2.5px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition-duration: 250ms;
+}
+
+.checkbox-complete:hover {
+    color: #29ABE2;
+    border: 2.5px solid #29ABE2;
+}
+
+.checkbox-complete::after {
+    content: '\2714';
+
+}
+
+.checkbox-delete {
+    font-weight: 800;
+    background-color: #E74646;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.checkbox-delete:hover {
+    background-color: #ffffff;
+    color: #E74646;
+}
+
+.task-text-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.task-check {
+    display: none;
+}
+
+.checkbox-checked {
+    background-color: #29ABE2;
+    border: none;
+    color: #ffffff;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.checkbox-checked:hover {
+    background-color: #29ABE2;
+    border: none;
+    color: #ffffff;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.taskChecked {
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.check-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.title {
+    padding: 0 10px;
+    text-align: center;
+}

@@ -1,0 +1,82 @@
+.new-task-div {
+    width: 100%;
+}
+
+.new-task-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper-div {
+    width: 100%;
+    text-align: center;
+}
+
+.new-task-input {
+    width: 97%;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    background-color: rgba(246, 209, 211, 0.081);
+    padding: 2px 0 2px 0;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.814);
+}
+
+.new-task-input:focus {
+    border: none;
+}
+
+.new-task-input::placeholder {
+    padding-left: 10px;
+}
+
+.add-button {
+    border: none;
+    font-size: 3rem;
+    background-color: transparent;
+    position: absolute;
+    right: 14px;
+    bottom: 32px;
+    cursor: pointer;
+    transition-duration: 150ms;
+    color: rgba(255, 255, 255, 0.814);
+}
+
+.add-button:hover {
+    color: #f6cefa;
+    transform: rotate(90deg);
+}
+
+.add-button:active {
+    color:#ea8ef3;
+}
+
+.lower-div {
+    margin: 10px 0 10px 0;
+    font-weight: 500;
+}
+
+#tvshow {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#movie {
+    cursor: pointer;
+}
+
+.typeContent {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+    .new-task-div {
+        display: none;
+    }
+}

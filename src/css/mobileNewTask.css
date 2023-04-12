@@ -1,0 +1,11 @@
+.mobile-tak-div {
+    width: 70px;
+    height: 70px;
+    background-color: #29ABE2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 3rem;
+}
