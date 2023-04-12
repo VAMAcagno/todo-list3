@@ -34,6 +34,7 @@ function App() {
       <LoadingBar tasksTotal={tasksTotal} tasksLeft={tasksLeft} />
       <NewTask todos={todos} setTodos={setTodos} error={error} setError={setError} />
       <OnGoingTasks todos={todos} setTodos={setTodos} error={error}/>
+      
       {/* <MobileNewTask /> */}
     </div>
   );
