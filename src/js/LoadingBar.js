@@ -2,8 +2,10 @@ import React, { useEffect } from 'react'
 import LoadingBarComponent from './LoadingBarComponent.js';
 import CompletedPercentage from './CompletedPercentage.js';
 import '../css/loadingbar.css';
+import { TodoContext } from '../TodoContext/index.js';
 
-function LoadingBar({tasksLeft, tasksTotal}) {
+function LoadingBar() {
+  const {tasksLeft, tasksTotal} = React.useContext(TodoContext);
   let percentage = ((tasksTotal-tasksLeft)/tasksTotal) * 100;
   if (!percentage) {
     percentage = 0;
@@ -11,19 +13,11 @@ function LoadingBar({tasksLeft, tasksTotal}) {
     percentage = percentage.toFixed(0);
   }
 
-  const [message, setMessage] = React.useState('');
-
-  React.useEffect(() => {
-    if(!(percentage != 100)) {
-      setMessage('You completed all tasks!');
-    }
-  }, [percentage]);
-
   return (
     <div className='loading-div'>
         <LoadingBarComponent />
         { (percentage !=100 ) ? <p className='percentage'>{percentage}% Completed</p> :
-        <p className='percentage'>{message}</p> }
+        <p className='percentage'>You completed all tasks!</p> }
     </div>
   );
 }

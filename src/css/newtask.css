@@ -74,9 +74,3 @@
 .typeContent {
     cursor: pointer;
 }
-
-@media screen and (max-width: 425px) {
-    .new-task-div {
-        display: none;
-    }
-}

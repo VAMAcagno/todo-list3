@@ -1,41 +1,26 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
 import Header from './js/Header.js';
 import LoadingBar from './js/LoadingBar';
 import NewTask from './js/NewTask.js';
 import OnGoingTasks from './js/OnGoingTasks.js';
 import MobileNewTask from './js/MobileNewTask.js';
+import Modal from './js/Modal.js';
+import { isLaptopDevice, isMobileDevice, isTabletDevice } from "responsive-react";
+import { ModalContext } from './js/ModalContext';
 
 function App() {
-  const [error, setError] = React.useState(false);
-  const [todos, setTodos] = React.useState([]);
-
-  React.useEffect(() => {
-    try {
-      const localStorageTodos = localStorage.getItem('TODOS_V1');
-    
-      if (!localStorageTodos) {
-        localStorage.setItem('TODOS_V1', JSON.stringify([]));
-
-      } else {
-        setTodos(JSON.parse(localStorageTodos));
-      }
-    } catch (error) {
-      setError(error);
-    }
-  }, []);
-
-  const tasksTotal = todos.length;
-  const tasksLeft = todos.filter(todo => todo.completed == false).length;
+  const {modal} = React.useContext(ModalContext);
 
   return (
+
     <div className='main-container'>
-      <Header tasksTotal={tasksTotal} tasksLeft={tasksLeft} />
-      <LoadingBar tasksTotal={tasksTotal} tasksLeft={tasksLeft} />
-      <NewTask todos={todos} setTodos={setTodos} error={error} setError={setError} />
-      <OnGoingTasks todos={todos} setTodos={setTodos} error={error}/>
-      
-      {/* <MobileNewTask /> */}
+          <Header />
+          <LoadingBar/>
+          {isLaptopDevice() && <NewTask/>}
+          <OnGoingTasks />
+          {(isTabletDevice() || isMobileDevice()) && <MobileNewTask />}
+          {modal && <Modal />}
     </div>
   );
 }
