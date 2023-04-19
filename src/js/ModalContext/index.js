@@ -1,6 +1,6 @@
 import React from "react";
 import { useModalContext } from "./useModalContext.js";
-import { TodoContext } from "../../TodoContext/index.js";
+import { TodoContext } from "../TodoContext/index.js";
 
 const ModalContext = React.createContext();
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/modal.css';
-import { TodoContext } from '../TodoContext';
+import { TodoContext } from './TodoContext';
 import { ModalContext } from './ModalContext';
 
 let result;

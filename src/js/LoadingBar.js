@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import LoadingBarComponent from './LoadingBarComponent.js';
 import CompletedPercentage from './CompletedPercentage.js';
 import '../css/loadingbar.css';
-import { TodoContext } from '../TodoContext/index.js';
+import { TodoContext } from './TodoContext/index.js';
 
 function LoadingBar() {
   const {tasksLeft, tasksTotal} = React.useContext(TodoContext);

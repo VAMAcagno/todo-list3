@@ -1,7 +1,7 @@
 import React from 'react';
 import OnGoingTaskComponent from './OnGoingTaskComponent.js';
 import '../css/onGoingTask.css';
-import { TodoContext } from '../TodoContext/index.js';
+import { TodoContext } from './TodoContext/index.js';
 
 function OnGoingTasks() {
 
