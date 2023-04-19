@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocalStorage } from "./useLocalStorage.js";
-import { isLaptopDevice, isBiggerThanLaptop, isMobileDevice, isTabletDevice } from "responsive-react";
 
 
 //Creo un context
@@ -17,7 +16,7 @@ function TodoProvider(props) {
     } = useLocalStorage('TODOS_V1');
 
     const tasksTotal = todos.length;
-    const tasksLeft = todos.filter(todo => todo.completed == false).length;
+    const tasksLeft = todos.filter(todo => todo.completed === false).length;
 
     const deleteTask =  (index) => {
         const newTodos = todos.slice();
@@ -70,10 +69,6 @@ function TodoProvider(props) {
         }
       };
 
-      const laptopSize = isLaptopDevice();
-      const biggerL = isBiggerThanLaptop();
-
-
       //Aca devuelvo todo en el return pero si o si como un VALUE dentro del TodoContext.Provider sino despues no funciona
     return (
         <TodoContext.Provider value={{
@@ -87,8 +82,6 @@ function TodoProvider(props) {
             completeTask,
             deleteTask,
             handleChange,
-            laptopSize,
-            biggerL,
         }}>
 
             {/* Estos props que vienen aca es donde va a ir, por asi decirlo, el <App> cuando llame al provider */}

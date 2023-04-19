@@ -5,7 +5,7 @@ import { TodoContext } from './TodoContext/index.js';
 
 function OnGoingTasks() {
 
-  const {todos, error, completeTask, deleteTask, laptopSize} = React.useContext(TodoContext);
+  const {todos, error, completeTask, deleteTask} = React.useContext(TodoContext);
   //const size = isLaptopDevice();
 
   // const deleteTask =  (index) => {

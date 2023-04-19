@@ -1,9 +1,7 @@
 import React from 'react'
 import '../css/onGoingTaskComponent.css';
-import { TodoContext } from './TodoContext';
 
 function OnGoingTaskComponent({taskText, completed, category, deleteTask, completeTask}) {
-  const {laptopSize, biggerL} = React.useContext(TodoContext);
 
   return (
     <div className={'task-div ' + (completed ? 'task-div-complete' : '')}>

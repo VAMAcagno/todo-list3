@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import LoadingBarComponent from './LoadingBarComponent.js';
-import CompletedPercentage from './CompletedPercentage.js';
 import '../css/loadingbar.css';
 import { TodoContext } from './TodoContext/index.js';
 

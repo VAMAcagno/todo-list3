@@ -6,7 +6,7 @@ const ModalContext = React.createContext();
 
 function ModalProvider(props) {
     const {modal, setModal} = useModalContext();
-    const {todos, setTodos, error, setError} = React.useContext(TodoContext);   
+    const {todos, setTodos, setError} = React.useContext(TodoContext);   
 
     ///
     /// Modal close and open

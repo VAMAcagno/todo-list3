@@ -1,7 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import '../css/header.css';
 import { TodoContext } from './TodoContext';
-import { IdResponsiveRenderOnlyIn, Responsive, useMediaQuery } from 'responsive-react';
 
 function Header() {
   const date = new Date();

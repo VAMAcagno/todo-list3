@@ -1,9 +1,6 @@
 import React from 'react';
 import '../css/modal.css';
-import { TodoContext } from './TodoContext';
 import { ModalContext } from './ModalContext';
-
-let result;
 
 function Modal() {
   const {modalToggler, handleChangeMobile, addNewTaskMobile} = React.useContext(ModalContext);
