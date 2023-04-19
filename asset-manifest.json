@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/VAMAcagno/todo-list3/static/css/main.6fc5963a.css",
+    "main.js": "/VAMAcagno/todo-list3/static/js/main.74f09adf.js",
+    "index.html": "/VAMAcagno/todo-list3/index.html",
+    "main.6fc5963a.css.map": "/VAMAcagno/todo-list3/static/css/main.6fc5963a.css.map",
+    "main.74f09adf.js.map": "/VAMAcagno/todo-list3/static/js/main.74f09adf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6fc5963a.css",
+    "static/js/main.74f09adf.js"
+  ]
+}
