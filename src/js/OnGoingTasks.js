@@ -8,33 +8,6 @@ function OnGoingTasks() {
   const {todos, error, completeTask, deleteTask} = React.useContext(TodoContext);
   //const size = isLaptopDevice();
 
-  // const deleteTask =  (index) => {
-  //   const newTodos = todos.slice();
-  //   newTodos.splice(index, 1)
-  //   localStorage.setItem('TODOS_V1', JSON.stringify(newTodos));
-  //   setTodos(newTodos);
-  // }
-
-  // const completeTask = (index) => {
-  //   if (todos[index].completed === false) {
-  //     const newTodos = todos.slice();
-  //     const doneTodo = todos[index];
-  //     newTodos[index].completed = !newTodos[index].completed;
-  //     newTodos.splice(index, 1);
-  //     newTodos.push(doneTodo);
-  //     localStorage.setItem('TODOS_V1', JSON.stringify(newTodos));
-  //     setTodos(newTodos);
-  //   } else {
-  //     const newTodos = todos.slice();
-  //     const doneTodo = todos[index];
-  //     doneTodo.completed = !doneTodo.completed;
-  //     newTodos.splice(index, 1);
-  //     newTodos.unshift(doneTodo);
-  //     localStorage.setItem('TODOS_V1', JSON.stringify(newTodos));
-  //     setTodos(newTodos);
-  //   }
-  // }
-
     return (
       <>
      { todos.length === 0 ? (<div className='first-todo-div'><p className='first-todo'>Create your first TODO.</p></div>) : 

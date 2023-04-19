@@ -15,6 +15,10 @@
     cursor: pointer;z-index: 3;
 }
 
+.mobile-tak-div:active {
+    box-shadow: rgba(43, 206, 247, 0.678) 0px 7px 29px 20px;
+}
+
 .mobile-tak-div p {
     margin: 0;
     margin-bottom: 10px;

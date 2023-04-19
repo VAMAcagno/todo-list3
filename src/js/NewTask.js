@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/newtask.css';
 import { TodoContext } from './TodoContext';
 
-let result;
+//let result;
 
 function NewTask() {
 
@@ -13,28 +13,6 @@ function NewTask() {
       addNewTask();
     }
   }
-
-  // const addNewTask = () => {
-  //   try {
-  //     let inputText = document.querySelector('.new-task-input');
-  //     if (!inputText.value || !result) {
-  //       return;
-  //     } else {
-  //       const newTodo = {taskText: inputText.value, completed: false, category: result};
-  //       todos.unshift(newTodo);
-  //       const newTodoList = todos.slice();
-  //       localStorage.setItem('TODOS_V1', JSON.stringify(newTodoList));
-  //       setTodos(newTodoList);
-  //       inputText.value = "";
-  //     }
-  //   } catch (error) {
-  //     setError(error);
-  //   }
-  // }
-  
-  // function handleChange(event) {
-  //   result = event.target.value;
-  // }
 
   return (
     <div className='new-task-div'>

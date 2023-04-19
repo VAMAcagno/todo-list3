@@ -33,6 +33,7 @@ function ModalProvider(props) {
             localStorage.setItem('TODOS_V1', JSON.stringify(newTodoList));
             setTodos(newTodoList);
             inputText.value = "";
+            setModal(!modal);
           }
         } catch (error) {
           setError(error);
