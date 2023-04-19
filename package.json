@@ -1,5 +1,5 @@
 {
-  "homepage": "https://vmacagno.github.io/todo-list/deploy",
+  "homepage": "https://VAMAcagno.github.io/todo-list3/",
   "name": "todo-list",
   "version": "0.1.0",
   "private": true,
@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages2 -d build --repo=https://github.com/VMacagno/todo-list.git",
+    "deploy": "gh-pages -d build --repo=https://VAMAcagno.github.io/todo-list3/",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
