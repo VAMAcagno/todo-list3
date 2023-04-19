@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App.js';
-import { TodoProvider } from './TodoContext/index.js';
-import { ModalProvider } from './js/ModalContext/index.js';
+import { TodoProvider } from './TodoContext';
+import { ModalProvider } from './js/ModalContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
