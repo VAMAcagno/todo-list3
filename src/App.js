@@ -17,7 +17,7 @@ function App() {
     <div className='main-container'>
           <Header />
           <LoadingBar/>
-          {isLaptopDevice() && <NewTask/>}
+          <NewTask/>
           <OnGoingTasks />
           {(isTabletDevice() || isMobileDevice()) && <MobileNewTask />}
           {modal && <Modal />}
